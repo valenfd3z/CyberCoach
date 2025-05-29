@@ -1,0 +1,249 @@
+.content-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.index-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.index-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.index-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.index-list li {
+    margin: 5px 0;
+}
+
+.index-list a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.index-list a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}
+.section-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.beneficios ul {
+    list-style: none;
+    padding-left: 20px;
+        margin-bottom: 10px;
+    position: relative;
+}
+.beneficios li {
+    margin-bottom: 10px;
+}
+
+.indice {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.indice h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.indice ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.indice li {
+    margin: 5px 0;
+}
+
+.indice a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.indice a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.volver-indice {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0b7ffc;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-volver:hover {
+    background-color: #0b7ffc;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-volver:active {
+    background-color: #0b7ffc;
+    transform: scale(0.95);
+}
+
+.beneficios li {
+    position: relative;
+}
+.beneficios li:before {
+    content: "✓";
+    position: absolute;
+    left: -20px;
+    color: #28a745;
+}
+
+.dia-entrenamiento h4 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.ejercicios-lista {
+    list-style: none;
+    padding: 0;
+}
+.ejercicios-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ejercicio-nombre {
+    font-weight: bold;
+    color: #333;
+}
+
+.ejercicio-detalles {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.ejercicio-nombre a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ejercicio-nombre a:hover {
+    color: #007bff;
+}
+
+.detalles, .recomendaciones, .ejercicios-tipicos {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+    .ejercicios-lista li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+/* Estilos para la tabla de rutinas */
+.tabla-rutinas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.tabla-rutinas th,
+.tabla-rutinas td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-rutinas th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.tabla-rutinas tr {
+    background-color: #fff;
+}
+
+.tabla-rutinas tr:hover {
+    background-color: #f5f5f5;
+}
+
+.dia-rutina {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.dia-rutina h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.dia-rutina p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para los días de la rutina */
+.dia-rutina {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.dia-rutina h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}

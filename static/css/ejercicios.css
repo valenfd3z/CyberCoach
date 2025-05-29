@@ -1,0 +1,68 @@
+/* Estilos para la página de ejercicios */
+html {
+    scroll-behavior: smooth;
+}
+
+.index-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.index-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.index-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.index-list li {
+    margin: 5px 0;
+}
+
+.index-list a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.index-list a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.volver-indice {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0b7ffc;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-volver:hover {
+    background-color: #0b7ffc;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-volver:active {
+    background-color: #0b7ffc;
+    transform: scale(0.95);
+}

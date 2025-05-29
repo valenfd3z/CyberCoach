@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="CYBER-COACH - Tu entrenador personal virtual"
+    />
+    <title>{% block title %}CYBER-COACH{% endblock %}</title>
+
+    <!-- Precargar recursos críticos -->
+    <link
+      rel="preload"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="{{ url_for('static', filename='js/index.js') }}"
+      as="script"
+    />
+
+    <!-- CSS común -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body>
+    <!-- Encabezado común -->
+    <header>
+      <div class="contenedor-cabecera">
+        <h1 class="contenedor-logo">
+          <a href="{{ url_for('main.pagina_principal') }}">CYBER-COACH</a>
+        </h1>
+
+        <div class="contenedor-login-registro">
+          {% if not session.get('user_id') %}
+          <a href="{{ url_for('auth.iniciar_sesion') }}" class="boton-login"
+            >Iniciar Sesión</a
+          >
+          <a
+            href="{{ url_for('auth.registrar_usuario') }}"
+            class="boton-registro"
+            >Registrarse</a
+          >
+          {% else %}
+          <div class="info-usuario">
+            <span>¡Bienvenido/a, {{ session['nombre_usuario'] }}!</span>
+            <a
+              href="{{ url_for('auth.cerrar_sesion') }}"
+              class="boton-cerrar-sesion"
+              >Cerrar sesión</a
+            >
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Navegación principal -->
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="{{ url_for('main.pagina_principal') }}">Inicio</a></li>
+          <li><a href="{{ url_for('rutinas.rutinas') }}">Rutinas</a></li>
+          <li>
+            <a href="{{ url_for('ejercicios.pagina_ejercicios') }}"
+              >Ejercicios</a
+            >
+          </li>
+          <li><a href="{{ url_for('main.dietas') }}">Dietas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenedor">{% block content %}{% endblock %}</main>
+
+    <!-- Pie de página común -->
+    <footer>
+      <div class="contenedor-footer">
+        <p>&copy; 2024 CYBER-COACH. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts comunes -->
+    <script src="{{ url_for('static', filename='js/session.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+
+    {% if session.get('user_id') %}
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '67e9cc270aac2940f7888f41' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+    {% endif %}
+
+    <!-- JavaScript común -->
+    <script
+      src="{{ url_for('static', filename='js/index.js') }}"
+      defer
+    ></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

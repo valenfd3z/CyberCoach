@@ -1,0 +1,125 @@
+{% extends "base.html" %} {% block title %}CYBER-COACH | Inicio{% endblock %} {%
+block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/index.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="contenedor fade-in">
+  <section class="seccion hero-section">
+    <h1 class="seccion-titulo">Bienvenido a CyberCoach</h1>
+    <p class="seccion-contenido">
+      CyberCoach es tu compañero ideal para mejorar tu rendimiento físico.
+      Explora nuestras rutinas, descubre nuevos ejercicios con videos
+      demostrativos y encuentra planes de dieta personalizados para alcanzar tus
+      metas. ¡Empieza hoy mismo!
+    </p>
+  </section>
+
+  <div class="grid grid-3">
+    <div class="tarjeta feature-card">
+      <img
+        src="https://thumbs.dreamstime.com/b/pareja-de-fitness-trabajando-en-el-gimnasio-haciendo-ejercicio-para-hombre-espalda-ayudando-la-mujer-chica-atl%C3%A9tica-%C3%BAltimo-282189443.jpg"
+        alt="Imagen Rutinas"
+        class="imagen-tarjeta"
+      />
+      <div class="tarjeta-contenido">
+        <h2 class="tarjeta-titulo">Rutinas</h2>
+        <p>
+          Descubre rutinas personalizadas para cada nivel y objetivo. Desde
+          principiantes hasta avanzados.
+        </p>
+        <div class="cta-section">
+          <a href="{{ url_for('rutinas.rutinas') }}" class="cta-button"
+            >Ver Rutinas</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta feature-card">
+      <img
+        src="https://i.pinimg.com/736x/63/13/70/631370a3b5fe1927462d24db9c839777.jpg"
+        alt="Imagen Ejercicios"
+        class="imagen-tarjeta"
+      />
+      <div class="tarjeta-contenido">
+        <h2 class="tarjeta-titulo">Ejercicios</h2>
+        <p>
+          Biblioteca completa de ejercicios con videos demostrativos y guías
+          detalladas.
+        </p>
+        <div class="cta-section">
+          <a
+            href="{{ url_for('ejercicios.pagina_ejercicios') }}"
+            class="cta-button"
+            >Ver Ejercicios</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta feature-card">
+      <img
+        src="https://media.gq.com.mx/photos/5f317fa2356b187cffb8431b/16:9/w_2560%2Cc_limit/comida%2520saludable.jpg"
+        alt="Imagen Dietas"
+        class="imagen-tarjeta"
+      />
+      <div class="tarjeta-contenido">
+        <h2 class="tarjeta-titulo">Dietas</h2>
+        <p>
+          Planes nutricionales adaptados a tus objetivos y preferencias
+          alimentarias.
+        </p>
+        <div class="cta-section">
+          <a href="{{ url_for('main.dietas') }}" class="cta-button"
+            >Ver Dietas</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="seccion contacto-section">
+    <h2 class="seccion-titulo">Contacta con un Entrenador Personal</h2>
+    <div class="grid grid-3 enlaces-contacto">
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        class="tarjeta contacto-card"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+          alt="Instagram"
+          class="contacto-icon"
+        />
+        <span>Síguenos en Instagram</span>
+      </a>
+      <a
+        href="https://wa.me/1234567890"
+        target="_blank"
+        class="tarjeta contacto-card"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          class="contacto-icon"
+        />
+        <span>Contáctanos por WhatsApp</span>
+      </a>
+      <a
+        href="mailto:correo@ejemplo.com"
+        target="_blank"
+        class="tarjeta contacto-card"
+      >
+        <img
+          src="https://i.blogs.es/d99c32/new_logo_gmail.svg/1366_2000.png"
+          alt="Correo"
+          class="contacto-icon"
+        />
+        <span>Envíanos un correo</span>
+      </a>
+    </div>
+  </section>
+</div>
+{% endblock %}

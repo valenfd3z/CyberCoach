@@ -1,0 +1,322 @@
+{% extends "base.html" %}
+{% block title %}CYBER-COACH | Dietas{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dietas.css') }}" />
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="volver-indice">
+    <a href="#indice" class="btn-volver">Volver al índice</a>
+  </div>
+  <section class="index-section">
+    <h2 id="indice" class="index-title">Tipos de dietas</h2>
+    <ul class="index-list">
+      <li><a href="#volumen">Volumen</a></li>
+      <li><a href="#definicion">Definición</a></li>
+      <li><a href="#mantenimiento">Mantenimiento</a></li>
+      <li><a href="#cetogenica">Cetogénica</a></li>
+      <li><a href="#alta-en-proteinas">Alta en proteínas</a></li>
+      <li><a href="#ayuno-intermitente">Ayuno intermitente</a></li>
+    </ul>
+  </section>
+
+  <section id="volumen" class="content-section">
+    <h2 class="section-title">Volumen</h2>
+    <div class="section-content">
+      <p>Dieta alta en calorías y rica en proteínas, combinada con carbohidratos complejos para energía sostenida. Se enfoca en el desarrollo muscular junto al entrenamiento de fuerza.</p>
+      <p><b>¿Quienes deberían utilizar esta dieta?</b><br/>Esta dieta es ideal para personas delgadas o que quieren mejorar su masa muscular. Ya que el objetivo es aumentar la masa muscular y el peso corporal de forma controlada.</p>
+      <div class="distribucion-diaria">
+        <h3>Distribución diaria sugerida</h3>
+        <div class="dia-dieta">
+          <h4>Desayuno</h4>
+          <ul class="dieta-lista">
+            <li>Carbohidratos complejos + Proteínas + Grasas saludables</li>
+          </ul>
+          <h4>Almuerzo</h4>
+          <ul class="dieta-lista">
+            <li>Carbohidratos complejos + Proteínas + Verduras + Grasas</li>
+          </ul>
+          <h4>Merienda</h4>
+          <ul class="dieta-lista">
+            <li>Carbohidratos rápidos o moderados + Proteínas</li>
+          </ul>
+          <h4>Cena</h4>
+          <ul class="dieta-lista">
+            <li>Carbohidratos complejos + Proteínas + Grasas</li>
+          </ul>
+          <h4>Snack opcional (post-cena)</h4>
+          <ul class="dieta-lista">
+            <li>Proteínas + Grasas saludables</li>
+          </ul>
+        </div>
+        <div class="dia-dieta">
+          <h3>Ejemplo</h3>
+          <div class="ejemplo-dia">
+            <h4>Desayuno</h4>
+            <p>Avena con leche, banana, mantequilla de maní y proteína en polvo</p>
+            <h4>Almuerzo</h4>
+            <p>Arroz integral, pechuga de pollo, ensalada con aceite de oliva</p>
+            <h4>Merienda</h4>
+            <p>Yogur griego con nueces y miel</p>
+            <h4>Cena</h4>
+            <p>Fideos integrales con carne magra y salsa natural de tomate</p>
+            <h4>Snack opcional (post-cena)</h4>
+            <p>Batido de proteína + banana</p>
+          </div>
+        </div>
+        <div class="detalles">
+          <h3>Detalles a tener en cuenta</h3>
+          <ul>
+            <li>El superávit calórico debe ser moderado para evitar ganar grasa.</li>
+            <li>Se recomienda entrenar fuerza con frecuencia (3-5 veces/semana).</li>
+            <li>Es clave consumir suficientes proteínas para sintetizar músculo.</li>
+            <li>Se puede ganar algo de grasa: es normal y luego se ajusta en definición.</li>
+          </ul>
+        </div>
+        <div class="beneficios">
+          <h3>Beneficios</h3>
+          <ul>
+            <li>Favorece el crecimiento muscular (hipertrofia)</li>
+            <li>Aumenta la fuerza y el rendimiento.</li>
+            <li>Mejora la recuperación muscular post-entreno.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="definicion" class="content-section">
+    <h2 class="section-title">Definicion</h2>
+    <div class="section-content">
+      <p>Déficit calórico moderado, priorizando alimentos ricos en proteína y bajos en calorías vacías. Ideal para conservar músculo mientras se pierde grasa.</p>
+      <p><b>¿Quienes deberian utilizar esta dieta?</b><br/>Esta dieta es ideal para personas con masa muscular que quieren marcar definición o perder grasa. Ya que el objetivo es reducir grasa corporal manteniendo la mayor cantidad de músculo posible.</p>
+      <div class="distribucion-diaria">
+        <h3>Distribución diaria sugerida</h3>
+        <div class="dia-dieta">
+          <ul class="dieta-lista">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Proteínas + Carbohidratos moderados</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Proteínas + Verduras + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Proteínas + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Proteínas + Verduras (bajos carbohidratos)</span></li>
+            <li><span class="dieta-nombre">Snack opcional(post-cena) -> </span><span class="dietas-detalles">Proteínas bajas en grasa</span></li>
+          </ul>
+        </div>
+        <div class="dia-dieta">
+          <h3>Ejemplo</h3>
+          <ul class="dieta">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Claras de huevo con avena y frutillas</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Ensalada grande con atún, huevo duro y aguacate</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Batido de proteína con agua y almendras</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Brócoli al vapor, pechuga de pollo y quinoa</span></li>
+            <li><span class="dieta-nombre">Snack opcional -> </span><span class="dietas-detalles">Gelatina sin azúcar o yogur light</span></li>
+          </ul>
+        </div>
+        <div class="detalles">
+          <h4>Detalles a tener en cuenta</h4>
+          <ul>
+            <li>El déficit calórico no debe ser excesivo (para evitar pérdida de músculo)</li>
+            <li>El consumo de proteínas debe mantenerse alto</li>
+            <li>El cardio puede ser un complemento útil, pero no obligatorio</li>
+            <li>Controlar el apetito con alimentos saciantes (proteína + fibra)</li>
+          </ul>
+        </div>
+        <div class="beneficios">
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Reduce el porcentaje de grasa corporal</li>
+            <li>Aumenta la definición muscular (más "marcado")</li>
+            <li>Mejora la sensibilidad a la insulina y salud metabólica</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mantenimiento" class="content-section">
+    <h2 class="section-title">Mantenimiento</h2>
+    <div class="section-content">
+      <p>Dieta balanceada con todos los grupos alimenticios, sin exceso ni restricción. Ideal para personas activas que quieren sostener su condición física actual.</p>
+      <p><b>¿Quienes deberian utilizar esta dieta?</b><br/>Esta dieta es ideal para personas que ya alcanzaron su objetivo físico y buscan estabilidad. Ya que el objetivo es sostener el peso corporal y composición actual, priorizando la salud general y el rendimiento físico.</p>
+      <div class="distribucion-diaria">
+        <h3>Distribución diaria sugerida</h3>
+        <div class="dia-dieta">
+          <ul class="dieta-lista">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Carbohidratos + Proteínas + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Carbohidratos + Proteínas + Verduras</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Carbohidratos + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Proteínas + Verduras + Carbohidratos moderados</span></li>
+            <li><span class="dieta-nombre">Snack opcional -> </span><span class="dietas-detalles">Frutas o Proteínas</span></li>
+          </ul>
+        </div>
+        <div class="dia-dieta">
+          <h3>Ejemplo</h3>
+          <ul class="dieta">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Tostadas integrales con huevo y palta</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Arroz, carne magra, ensalada de hojas verdes</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Yogur con granola</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Omelette de verduras con batata al horno</span></li>
+            <li><span class="dieta-nombre">Snack opcional(post-cena) -> </span><span class="dietas-detalles">Fruta fresca o puñado de frutos secos</span></li>
+          </ul>
+        </div>
+        <div class="detalles">
+          <h4>Detalles a tener en cuenta</h4>
+          <ul>
+            <li>Seguir entrenando para no perder masa muscular</li>
+            <li>Controlar la calidad de los alimentos aunque no se tenga un objetivo fuerte</li>
+            <li>Ideal para mantener buenos hábitos a largo plazo</li>
+          </ul>
+        </div>
+        <div class="beneficios">
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Estabilidad en el peso corporal y estado físico</li>
+            <li>Flexibilidad alimentaria sin restricciones</li>
+            <li>Facilita el rendimiento físico y mental de forma sostenida</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cetogenica" class="content-section">
+    <h2 class="section-title">Cetogenica</h2>
+    <div class="section-content">
+      <p>Dieta alta en grasas saludables y proteínas, muy baja en carbohidratos (menos de 50g al día). Induce cetosis, donde el cuerpo usa grasa en vez de glucosa.</p>
+      <p><b>¿Quienes deberian utilizar esta dieta?</b><br/>Esta dieta es ideal para personas que quieren reducir grasa rápidamente o mejorar control metabólico. Ya que el objetivo es quemar grasa usando la grasa como fuente principal de energía (cetosis).</p>
+      <div class="distribucion-diaria">
+        <h3>Distribución diaria sugerida</h3>
+        <div class="dia-dieta">
+          <ul class="dieta-lista">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Proteínas + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Proteínas + Grasas saludables + Verduras bajas en carbohidratos</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Grasas saludables + Proteínas</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Proteínas + Grasas + Verduras verdes</span></li>
+            <li><span class="dieta-nombre">Snack opcional -> </span><span class="dietas-detalles">Grasas saludables (nueces, aceite, aceitunas)</span></li>
+          </ul>
+        </div>
+        <div class="dia-dieta">
+          <h3>Ejemplo</h3>
+          <ul class="dieta">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Huevos revueltos con tocino y palta</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Ensalada con pollo, nueces y aceite de oliva</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Queso y nueces</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Salmón al horno con espárragos y manteca</span></li>
+            <li><span class="dieta-nombre">Snack opcional(post-cena) -> </span><span class="dietas-detalles">Huevo duro o aceitunas</span></li>
+          </ul>
+        </div>
+        <div class="detalles">
+          <h4>Detalles a tener en cuenta</h4>
+          <ul>
+            <li>Es una dieta muy restrictiva: no apta para todos</li>
+            <li>Puede haber efectos secundarios al inicio (fatiga, "gripe keto")</li>
+            <li>No recomendada si hacés entrenamientos muy intensos anaeróbicos (como pesas muy pesadas)</li>
+            <li>Requiere control de electrolitos y buena hidratación</li>
+          </ul>
+        </div>
+        <div class="beneficios">
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Promueve la quema de grasa como fuente de energía</li>
+            <li>Mejora el control del apetito (menor hambre)</li>
+            <li>Estabiliza los niveles de glucosa e insulina</li>
+            <li>Puede ser útil para personas con resistencia a la insulina</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alta-en-proteinas" class="content-section">
+    <h2 class="section-title">Alta en proteinas</h2>
+    <div class="section-content">
+      <p>Dieta rica en proteínas (2-2.5g/kg de peso corporal). Ideal para entrenamiento intenso o definición muscular. Se puede combinar con volumen o déficit.</p>
+      <p><b>¿Quienes deberian utilizar esta dieta?</b><br/>Esta dieta es ideal para personas que entrenan con fuerza, buscan definir o controlar el apetito. Ya que el objetivo es favorecer la ganancia o conservación de masa muscular, aumentar la saciedad, y mejorar el metabolismo.</p>
+      <div class="distribucion-diaria">
+        <h3>Distribución diaria sugerida</h3>
+        <div class="dia-dieta">
+          <ul class="dieta-lista">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Proteínas + Carbohidratos complejos</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Alta en Proteínas + Verduras + Carbohidratos</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Proteínas + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Alta en Proteínas + Verduras</span></li>
+            <li><span class="dieta-nombre">Snack opcional -> </span><span class="dietas-detalles">Proteínas (bajo en carbohidratos)</span></li>
+          </ul>
+        </div>
+        <div class="dia-dieta">
+          <h3>Ejemplo</h3>
+          <ul class="dieta">
+            <li><span class="dieta-nombre">Desayuno -> </span><span class="dietas-detalles">Omelette de 4 claras + 1 huevo entero y avena</span></li>
+            <li><span class="dieta-nombre">Almuerzo -> </span><span class="dietas-detalles">Carne magra, batata y verduras al vapor</span></li>
+            <li><span class="dieta-nombre">Merienda -> </span><span class="dietas-detalles">Yogur proteico o atún con galletas de arroz</span></li>
+            <li><span class="dieta-nombre">Cena -> </span><span class="dietas-detalles">Filete de pollo + ensalada con semillas</span></li>
+            <li><span class="dieta-nombre">Snack opcional(post-cena) -> </span><span class="dietas-detalles">Batido de proteínas o queso cottage</span></li>
+          </ul>
+        </div>
+        <div class="detalles">
+          <h4>Detalles a tener en cuenta</h4>
+          <ul>
+            <li>Acompañar con buen consumo de agua</li>
+            <li>Puede ser exigente para personas con problemas renales (consultar médico)</li>
+            <li>No es una dieta por sí sola, sino un enfoque compatible con volumen, déficit o mantenimiento</li>
+          </ul>
+        </div>
+        <div class="beneficios">
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Conserva y construye masa muscular</li>
+            <li>Aumenta la saciedad y controla el apetito</li>
+            <li>Acelera el metabolismo (efecto térmico de los alimentos)</li>
+            <li>Ayuda en procesos de recomposición corporal (perder grasa y ganar músculo a la vez)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ayuno-intermitente" class="content-section">
+    <h2 class="section-title">Ayuno interminente</h2>
+    <div class="section-content">
+      <p>Consiste en alternar periodos de ayuno y alimentación (ej: 16 horas de ayuno, 8 horas de comida). Enfocado más en "cuándo" se come que en "qué" se come, aunque se recomienda una dieta limpia.</p>
+      <p><b>¿Quienes deberian utilizar esta dieta?</b><br/>Esta dieta es ideal para personas que se adaptan bien a no comer por periodos largos o buscan flexibilidad. Ya que el objetivo es perder grasa, mejorar la sensibilidad a la insulina y regular el apetito.</p>
+      <div class="distribucion-diaria">
+        <h3>Distribución durante la ventana de alimentación (12:00 a 20:00)</h3>
+        <div class="dia-dieta">
+          <ul class="dieta-lista">
+            <li><span class="dieta-nombre">Primera comida (12:00) -> </span><span class="dietas-detalles">Carbohidratos + Proteínas + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Merienda (16:00) -> </span><span class="dietas-detalles">Proteínas + Carbohidratos moderados</span></li>
+            <li><span class="dieta-nombre">Cena (20:00) -> </span><span class="dietas-detalles">Proteínas + Verduras + Grasas saludables</span></li>
+            <li><span class="dieta-nombre">Ayuno -> </span><span class="dietas-detalles">Agua, café/té sin azúcar, electrolitos sin calorías</span></li>
+          </ul>
+        </div>
+        <div class="dia-dieta">
+          <h3>Ejemplo de distribución (protocolo 16/8)</h3>
+          <ul class="dieta">
+            <li><span class="dieta-nombre">Primera comida (12:00) -> </span><span class="dietas-detalles">Pollo con arroz integral y ensalada</span></li>
+            <li><span class="dieta-nombre">Merienda (16:00) -> </span><span class="dietas-detalles">Yogur griego con frutos rojos</span></li>
+            <li><span class="dieta-nombre">Cena (20:00) -> </span><span class="dietas-detalles">Omelette con verduras y queso + fruta</span></li>
+            <li><span class="dieta-nombre">Ayuno -> </span><span class="dietas-detalles">Solo agua, café o té sin azúcar</span></li>
+          </ul>
+        </div>
+        <div class="detalles">
+          <h4>Detalles a tener en cuenta</h4>
+          <ul>
+            <li>No es para todos: no se recomienda en personas con historial de trastornos alimenticios</li>
+            <li>Lo importante sigue siendo qué comés, no solo cuándo</li>
+            <li>Entrenar en ayunas es posible, pero puede costar al principio</li>
+            <li>Puede ser difícil sostenerlo en el tiempo si tenés horarios sociales o laborales fijos</li>
+          </ul>
+        </div>
+        <div class="beneficios">
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Mejora la sensibilidad a la insulina</li>
+            <li>Puede facilitar el déficit calórico sin contar calorías</li>
+            <li>Promueve la autofagia (reciclaje celular) durante el ayuno</li>
+            <li>Flexibilidad alimentaria (menos comidas al día)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,1297 @@
+{% extends "base.html" %} {% block title %}CYBER-COACH | Rutinas{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/rutinas.css') }}" />
+{% endblock %} {% block content %}
+  <div class="container">
+    <div class="volver-indice">
+      <a href="#indice" class="btn-volver">Volver al índice</a>
+    </div>
+    <section class="index-section">
+      <h2 id="indice" class="index-title">Tipos de rutinas</h2>
+      <ul class="index-list">
+        <li><a href="#full-body">Full-Body</a></li>
+        <li><a href="#weider">Weider (por grupos musculares)</a></li>
+        <li><a href="#torso-pierna">Torso-Pierna</a></li>
+        <li><a href="#ppl">Push Pull Legs</a></li>
+        <li><a href="#fuerza">Fuerza</a></li>
+        <li><a href="#alta-intensidad">Alta Intensidad (HIIT)</a></li>
+      </ul>
+    </section>
+
+  <section id="full-body" class="content-section">
+    <h2 class="section-title">Full-Body</h2>
+    <div class="section-content">
+      <p>La rutina más común y conocida, la Full-Body, o de cuerpo completo, es un tipo de entrenamiento que involucra todos los principales grupos musculares en una sola sesión. Es una modalidad utilizada tanto por principiantes como por deportistas avanzados, debido a su eficiencia y versatilidad.</p>
+      <p><b>¿En qué consiste una rutina Full-Body?</b><br />Se trabaja el <b>tren superior (pecho, espalda, hombros, brazos)</b> y el <b>tren inferior (piernas, glúteos)</b> en la misma sesión.<br />Normalmente se realiza de 2 a 4 veces por semana, permitiendo así un equilibrio entre trabajo muscular y recuperación.</p>
+      <div class="programa-semanal">
+        <h3>Programa Semanal</h3>
+        <div class="dia-rutina">
+          <h4>Lunes</h4>
+          <p>DIA: Lunes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sentadillas</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Press de banca</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Remo con barra</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Curl de bíceps con mancuernas</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Plancha</td>
+                <td>3</td>
+                <td>30 segundos</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Miércoles</h4>
+          <p>DIA: Miércoles</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Peso muerto</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Press militar</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Dominadas</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Fondos en paralelas</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Crunch abdominal</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Viernes</h4>
+          <p>DIA: Viernes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Zancadas con mancuernas</td>
+                <td>4</td>
+                <td>10 por pierna</td>
+              </tr>
+              <tr>
+                <td>Press inclinado con mancuernas</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Remo con mancuernas a una mano</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Elevaciones laterales</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Bicicleta abdominal</td>
+                <td>3</td>
+                <td>30 segundos</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="detalles">
+        <h3>Detalles a tener en cuenta</h3>
+        <ul>
+          <li><b>Descanso entre series:</b> 60 a 90 segundos</li>
+          <li><b>Progresión:</b> intentar aumentar el peso o las repeticiones</li>
+          <li><b>Calentamiento:</b> siempre hacer al menos 5-10 minutos de movilidad articular y cardio suave</li>
+          <li><b>Enfriamiento:</b> estiramientos suaves al final de cada sesión para evitar futuras lesiones</li>
+        </ul>
+      </div>
+      <div class="beneficios">
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Eficiencia en el tiempo: Ideal para quienes tienen pocos días disponibles para entrenar.</li>
+          <li>Mayor frecuencia de estímulo muscular: Se estimula cada grupo muscular varias veces a la semana.</li>
+          <li>Mejor recuperación sistémica: Si se planifica bien, permite evitar el sobreentrenamiento localizado.</li>
+          <li>Desarrollo equilibrado del cuerpo: Al no aislar zonas específicas, se promueve una mejora global.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="weider" class="content-section">
+    <h2 class="section-title">Weider (por grupos musculares)</h2>
+    <div class="section-content">
+      <p>La rutina Weider, o rutina dividida, es uno de los métodos de entrenamiento más tradicionales y utilizados en el ámbito del fisicoculturismo y el fitness. Se enfoca en trabajar grupos musculares específicos en días separados, permitiendo un alto volumen de entrenamiento por grupo muscular.</p>
+      <p><b>¿En qué consiste una rutina Weider?</b><br />Se divide la semana en sesiones que se concentran en ciertos músculos o regiones del cuerpo.<br />Por ejemplo: Un día se entrena pecho, otro día espalda, otro piernas, etc. Esta rutina suele realizarse de 4 a 6 días por semana, con al menos un día de descanso (normalmente el fin de semana es usado para descansar).</p>
+      <div class="programa-semanal">
+        <h3>Estructura semanal básica (5 días)</h3>
+        <p class="nota">Cabe recalcar que este es un ejemplo de lo más usado, si desea más enfoque en otros músculos puede sacar unos ejercicios y reemplazarlos por los que desee, siempre teniendo en cuenta que el músculo pueda descansar correctamente (si es posible 48 hs).</p>
+        <div class="dia-rutina">
+          <h4>Lunes (Torso)</h4>
+          <p>DIA: Lunes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press de banca</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Press inclinado</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Aperturas con mancuernas</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Extensiones de tríceps</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Martes - Espalda + Bíceps</h4>
+          <p>DIA: Martes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dominadas</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Remo con barra</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Peso muerto</td>
+                <td>3</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Jalones al pecho</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Miércoles - Piernas</h4>
+          <p>DIA: Miércoles</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sentadillas</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Hip thrust</td>
+                <td>4</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Prensa de piernas</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Zancadas</td>
+                <td>3</td>
+                <td>10 por pierna</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Jueves - Hombros + Abdominales</h4>
+          <p>DIA: Jueves</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press militar</td>
+                <td>4</td>
+                <td>8-12</td>
+              </tr>
+              <tr>
+                <td>Elevaciones laterales</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Face pulls</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Crunch abdominal</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Viernes - Combinación</h4>
+          <p>DIA: Viernes</p>
+          <p>Combinación a gusto personal, en base a este ejemplo podríamos hacer ejercicios de los músculos que más descanso tuvieron (pecho, tríceps, espalda, bíceps), elegir preferentemente espalda o pecho combinado con bíceps o tríceps</p>
+        </div>
+      </div>
+      <div class="ejercicios-tipicos">
+        <h3>Ejercicios típicos por grupo muscular</h3>
+        <div class="grupo-muscular">
+          <h4>Pecho</h4>
+          <ul>
+            <li>Press de banca</li>
+            <li>Press inclinado</li>
+            <li>Aperturas con mancuernas</li>
+            <li>Cruce de poleas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="recomendaciones">
+        <h3>¿Para quién se recomienda la rutina Weider?</h3>
+        <ul>
+          <li>Intermedios y avanzados: Que ya dominan la técnica y buscan desarrollo muscular específico</li>
+          <li>Personas con alta disponibilidad horaria</li>
+          <li>Fisicoculturistas o quienes entrenan con fines estéticos</li>
+        </ul>
+      </div>
+      <div class="beneficios">
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Aislamiento muscular efectivo: Permite enfocarse en un grupo muscular por sesión</li>
+          <li>Alto volumen de entrenamiento: Se puede realizar más ejercicios y series al dedicar una sesión completa a pocos músculos</li>
+          <li>Mejor enfoque y técnica: Trabajar pocos músculos por día reduce la fatiga general durante el entrenamiento</li>
+          <li>Ideal para objetivos estéticos: Permite moldear el cuerpo con precisión enfocándose en músculos rezagados</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="torso-pierna" class="content-section">
+    <h2 class="section-title">Torso-Pierna</h2>
+    <div class="section-content">
+      <p>La rutina Torso-Pierna (también conocida como "Upper-Lower") es muy efectiva y equilibrada, ideal para quienes entrenan 4 o 5 veces por semana. Es una rutina muy usada por quienes desean mejorar fuerza, hipertrofia y rendimiento con una frecuencia ideal de 2 veces por grupo muscular por semana.</p>
+      <p><b>¿Qué es?</b><br />La rutina Torso-Pierna divide el entrenamiento en dos grandes grupos:<br /><u>Días de Torso (Upper)</u>: se trabajan pecho, espalda, hombros y brazos.<br /><u>Días de Pierna (Lower)</u>: se trabajan cuádriceps, femorales, glúteos, pantorrillas y abdominales.</p>
+      <div class="programa-semanal">
+        <h3>Estructura semanal básica (4 días)</h3>
+        <p class="nota">Cabe recalcar que este es un ejemplo de lo más usado, si desea más enfoque en otros músculos puede sacar unos ejercicios y reemplazarlos por los que desee, siempre teniendo en cuenta que el músculo pueda descansar correctamente (si es posible 48 hs).</p>
+        <div class="dia-rutina">
+          <h4>Lunes - Torso A</h4>
+          <p>DIA: Lunes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press de banca plano con barra</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Remo con barra</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Press militar con mancuernas</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Jalones al pecho</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Curl con barra</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Fondos de tríceps</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Martes - Piernas A</h4>
+          <p>DIA: Martes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sentadilla</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Peso muerto rumano</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Zancadas con mancuernas</td>
+                <td>3</td>
+                <td>10 por pierna</td>
+              </tr>
+              <tr>
+                <td>Curl femoral</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Elevaciones de talones</td>
+                <td>3</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Plancha</td>
+                <td>3</td>
+                <td>30-60 segundos</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Jueves - Torso B</h4>
+          <p>DIA: Jueves</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press inclinado con mancuernas</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Remo en máquina o polea</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Elevaciones laterales</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Pull-over en polea</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Curl martillo</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Tríceps en cuerda</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Viernes - Piernas B</h4>
+          <p>DIA: Viernes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Prensa de piernas</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Peso muerto convencional</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Extensiones de cuádriceps</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Curl femoral tumbado</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Elevaciones de talones sentado</td>
+                <td>3</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Crunches con peso</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="detalles">
+        <h3>Detalles a tener en cuenta</h3>
+        <ul>
+          <li><b>Enfocarse en ejercicios compuestos:</b> La base de la rutina son los movimientos multiarculares (press de banca, sentadilla, etc.) ya que estos ejercicios activan grandes grupos musculares que ayudan a promover mejor desarrollo muscular.</li>
+          <li><b>Alternar intensidades:</b> Es recomendable alternar días más pesados con otros más ligeros o de más repeticiones. Por ejemplo: Torso A con más carga, Torso B más técnico o con más volumen.</li>
+          <li><b>Distribución del descanso:</b> 48 horas entre el trabajo de un mismo grupo muscular es lo ideal. Si se hace una rutina de 5 días por ejemplo se puede sumar un día de cardio para complementar.</li>
+          <li><b>Equilibrar empuje y tracción:</b> En los días de torso, es importante mantener un equilibrio entre ejercicios de empuje (press, fondos) y de tracción (remo, jalones).</li>
+        </ul>
+      </div>
+      <div class="beneficios">
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Frecuencia ideal de entrenamiento: Al entrenar cada músculo 2 veces por semana esto favorece al crecimiento muscular y la mejora de fuerza.</li>
+          <li>Sencillo y efectivo.</li>
+          <li>Gran equilibrio entre volumen y recuperación.</li>
+          <li>Es adaptable y buena base para intermedios que no quieren o pueden entrenar 5 o 6 días por semana.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ppl" class="content-section">
+    <h2 class="section-title">Push Pull Legs</h2>
+    <div class="section-content">
+      <p>La rutina PPL, Push(empuje), Pull(tracción), Legs(piernas), es un tipo de entrenamiento dividido por patrones de movimiento. Es uno de los enfoques más utilizados por personas intermedias y avanzadas que buscan progresar en fuerza, hipertrofia o rendimiento.</p>
+      <div class="descripcion">
+        <h3>Se basa en dividir el entrenamiento en tres tipos de días:</h3>
+        <ul>
+          <li><b>Push:</b> Trabaja pecho, hombros y tríceps</li>
+          <li><b>Pull:</b> Trabaja espalda y bíceps</li>
+          <li><b>Legs:</b> Trabaja cuádriceps, femorales, glúteos y pantorrillas</li>
+        </ul>
+      </div>
+      <div class="programa-semanal">
+        <h3>Estructura semanal básica (5 días)</h3>
+        <p class="nota">Cabe recalcar que este es un ejemplo de 5 días, se puede hacer de 6 días o cambiar el día de descanso. Creemos que al ser de 5 días logra que más personas logren adaptarse, ya cuando tengan más confianza puedan ir 6 días.</p>
+        <div class="dia-rutina">
+          <h4>Lunes (Push)</h4>
+          <p>DIA: Lunes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press de banca plano con barra</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Press militar con mancuernas</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Aperturas en banco inclinado</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Fondos</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Extensiones de tríceps en polea</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Martes (Pull)</h4>
+          <p>DIA: Martes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dominadas</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Remo con barra</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Peso muerto</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Jalones al pecho</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Curl con barra</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Miércoles (Legs)</h4>
+          <p>DIA: Miércoles</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sentadillas</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Peso muerto rumano</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Zancadas con mancuernas</td>
+                <td>3</td>
+                <td>10 por pierna</td>
+              </tr>
+              <tr>
+                <td>Curl femoral</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Elevaciones de talones</td>
+                <td>3</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Jueves (Push)</h4>
+          <p>DIA: Jueves</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press inclinado con mancuernas</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Remo en máquina o polea</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Elevaciones laterales</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Pull-over en polea</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Curl martillo</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Tríceps en cuerda</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Viernes (Pull)</h4>
+          <p>DIA: Viernes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dominadas</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Remo con barra</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Peso muerto</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Jalones al pecho</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Curl con barra</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Sábado (Legs)</h4>
+          <p>DIA: Sábado</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Prensa de piernas</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Peso muerto convencional</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Extensiones de cuádriceps</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Curl femoral tumbado</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Elevaciones de talones sentado</td>
+                <td>3</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dia-rutina">
+          <h4>Viernes (Push + Pull ligero y variado)</h4>
+          <p>DIA: Viernes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press inclinado con mancuernas</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Elevaciones laterales</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Dominadas</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Remo con barra</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Curl con barra</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="detalles">
+        <h3>Detalles a tener en cuenta</h3>
+        <ul>
+          <li><b>Respetar la frecuencia:</b> Es clave repetir el ciclo regularmente para estimular el músculo 2 veces por semana.</li>
+          <li><b>Progresión de cargas:</b> Intentar aumentar el peso o las repeticiones.</li>
+          <li><b>Descansos entre series:</b> Entre 1 minuto y 3 es lo óptimo.</li>
+          <li><b>Variación:</b> Variar cada 2 meses de ejercicios y realizar la técnica correcta aunque sea con menos peso.</li>
+        </ul>
+      </div>
+      <div class="beneficios">
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Mantener alta frecuencia muscular.</li>
+          <li>Se adapta bien a agendas ocupadas.</li>
+          <li>Evita la fatiga extrema de los ciclos de 6 días.</li>
+          <li>Ideal para intermedios que quieren progresar en fuerza e hipertrofia y para principiantes.</li>
+        </ul>
+      </div>
+  <p>La rutina de fuerza está diseñada específicamente para aumentar la fuerza máxima en los levantamientos principales. Se centra en los ejercicios compuestos más importantes y utiliza rangos de repeticiones bajos con cargas altas. Es ideal para powerlifters o personas que buscan maximizar su fuerza.</p>
+
+  <div class="descripcion">
+    <h3>Características principales:</h3>
+    <ul>
+      <li>Enfoque en los 3 grandes levantamientos: Sentadilla, Press de Banca y Peso Muerto</li>
+      <li>Uso de cargas pesadas (70-95% de 1RM)</li>
+      <li>Pocas repeticiones por serie (1-5 generalmente)</li>
+      <li>Descansos largos entre series (3-5 minutos)</li>
+    </ul>
+  </div>
+
+  <section id="fuerza" class="content-section">
+    <h2 class="section-title">Fuerza</h2>
+    <div class="section-content">
+      <p>La rutina de fuerza está diseñada específicamente para aumentar la fuerza máxima en los levantamientos principales. Se centra en los ejercicios compuestos más importantes y utiliza rangos de repeticiones bajos con cargas altas. Es ideal para powerlifters o personas que buscan maximizar su fuerza.</p>
+
+      <div class="descripcion">
+        <h3>Características principales:</h3>
+        <ul>
+          <li>Enfoque en los 3 grandes levantamientos: Sentadilla, Press de Banca y Peso Muerto</li>
+          <li>Uso de cargas pesadas (70-95% de 1RM)</li>
+          <li>Pocas repeticiones por serie (1-5 generalmente)</li>
+          <li>Descansos largos entre series (3-5 minutos)</li>
+        </ul>
+      </div>
+
+      <div class="programa-semanal">
+        <h3>Estructura semanal básica (4 días)</h3>
+        <p class="nota">Este programa está basado en principios de powerlifting, pero adaptado para ser accesible a personas intermedias que quieren mejorar su fuerza. Los porcentajes están basados en tu 1RM (Repetición Máxima).</p>
+
+        <div class="dia-rutina">
+          <h4>Lunes - Sentadilla</h4>
+          <p>DIA: Lunes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sentadilla (calentamiento)</td>
+                <td>3</td>
+                <td>5 (50-60%)</td>
+              </tr>
+              <tr>
+                <td>Sentadilla (trabajo)</td>
+                <td>5</td>
+                <td>3 (80-85%)</td>
+              </tr>
+              <tr>
+                <td>Sentadilla frontal</td>
+                <td>3</td>
+                <td>5 (70%)</td>
+              </tr>
+              <tr>
+                <td>Prensa de piernas</td>
+                <td>3</td>
+                <td>8 (moderado)</td>
+              </tr>
+              <tr>
+                <td>Extensiones de cuádriceps</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dia-rutina">
+          <h4>Martes - Press de Banca</h4>
+          <p>DIA: Martes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Press de banca (calentamiento)</td>
+                <td>3</td>
+                <td>5 (50-60%)</td>
+              </tr>
+              <tr>
+                <td>Press de banca (trabajo)</td>
+                <td>5</td>
+                <td>3 (80-85%)</td>
+              </tr>
+              <tr>
+                <td>Press cerrado</td>
+                <td>3</td>
+                <td>5 (70%)</td>
+              </tr>
+              <tr>
+                <td>Press militar</td>
+                <td>3</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Tríceps en polea</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dia-rutina">
+          <h4>Jueves - Peso Muerto</h4>
+          <p>DIA: Jueves</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Peso muerto (calentamiento)</td>
+                <td>3</td>
+                <td>3 (50-60%)</td>
+              </tr>
+              <tr>
+                <td>Peso muerto (trabajo)</td>
+                <td>5</td>
+                <td>2 (85-90%)</td>
+              </tr>
+              <tr>
+                <td>Peso muerto rumano</td>
+                <td>3</td>
+                <td>6 (70%)</td>
+              </tr>
+              <tr>
+                <td>Remo con barra</td>
+                <td>3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Hiperextensiones</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dia-rutina">
+          <h4>Viernes - Volumen y Accesorios</h4>
+          <p>DIA: Viernes</p>
+          <table class="tabla-rutinas">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sentadilla pausa</td>
+                <td>3</td>
+                <td>5 (70%)</td>
+              </tr>
+              <tr>
+                <td>Press de banca pausa</td>
+                <td>3</td>
+                <td>5 (70%)</td>
+              </tr>
+              <tr>
+                <td>Dominadas lastradas</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Press militar</td>
+                <td>3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Plancha con peso</td>
+                <td>3</td>
+                <td>45 segundos</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="detalles">
+        <h3>Detalles importantes</h3>
+        <ul>
+          <li><b>Calentamiento:</b> Es crucial realizar un calentamiento adecuado, especialmente con cargas pesadas.</li>
+          <li><b>Técnica:</b> La forma correcta es más importante que el peso. Graba tus series para analizar tu técnica.</li>
+          <li><b>Progresión:</b> Aumenta el peso gradualmente (2.5-5kg) cuando puedas completar todas las series y repeticiones con buena forma.</li>
+          <li><b>Descanso:</b> Toma el tiempo necesario entre series pesadas (3-5 minutos) para recuperarte completamente.</li>
+        </ul>
+      </div>
+
+      <div class="beneficios">
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Aumento significativo de la fuerza máxima.</li>
+          <li>Mejora de la densidad ósea y la salud articular.</li>
+          <li>Desarrollo de la técnica en los levantamientos principales.</li>
+          <li>Base sólida para cualquier otro objetivo fitness.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    <ul>
+      <li>Aumento significativo de la fuerza máxima.</li>
+      <li>Mejora de la densidad ósea y la salud articular.</li>
+      <li>Desarrollo de la técnica en los levantamientos principales.</li>
+      <li>Base sólida para cualquier otro objetivo fitness.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="alta-intensidad" class="content-section">
+<h2 class="section-title">Alta Intensidad (HIIT)</h2>
+<div class="section-content">
+  <p>El entrenamiento de alta intensidad por intervalos (HIIT) es un método de entrenamiento que alterna períodos cortos de ejercicio intenso con períodos de recuperación o ejercicio de menor intensidad. Es extremadamente efectivo para quemar grasa, mejorar la resistencia cardiovascular y mantener la masa muscular.</p>
+
+  <div class="descripcion">
+    <h3>Características principales:</h3>
+    <ul>
+      <li>Sesiones cortas pero intensas (20-30 minutos)</li>
+      <li>Alternancia entre esfuerzo máximo y recuperación</li>
+      <li>Combina ejercicios cardiovasculares y de fuerza</li>
+      <li>Alta quema calórica durante y después del ejercicio</li>
+    </ul>
+  </div>
+
+  <div class="programa-semanal">
+    <h3>Programa semanal (3-4 días)</h3>
+    <p class="nota">Los entrenamientos HIIT son muy intensos, por lo que se recomienda no realizarlos más de 3-4 veces por semana. Intercala días de descanso o actividad ligera entre sesiones.</p>
+
+    <div class="dia-rutina">
+      <h4>Sesión 1 - HIIT Corporal Total</h4>
+      <p>DIA: Sesión 1</p>
+      <p>Realiza cada ejercicio durante 40 segundos, descansa 20 segundos. Repite el circuito 3-4 veces.</p>
+      <table class="tabla-rutinas">
+        <thead>
+          <tr>
+            <th>Ejercicio</th>
+            <th>Tiempo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Burpees</td>
+            <td>40s trabajo / 20s descanso</td>
+          </tr>
+          <tr>
+            <td>Mountain climbers</td>
+            <td>40s trabajo / 20s descanso</td>
+          </tr>
+          <tr>
+            <td>Jumping jacks</td>
+            <td>40s trabajo / 20s descanso</td>
+          </tr>
+          <tr>
+            <td>Sentadillas con salto</td>
+            <td>40s trabajo / 20s descanso</td>
+          </tr>
+          <tr>
+            <td>Flexiones</td>
+            <td>40s trabajo / 20s descanso</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dia-rutina">
+      <h4>Sesión 2 - HIIT con Pesas</h4>
+      <p>DIA: Sesión 2</p>
+      <p>30 segundos de trabajo, 30 segundos de descanso. 3 rondas completas.</p>
+      <table class="tabla-rutinas">
+        <thead>
+          <tr>
+            <th>Ejercicio</th>
+            <th>Tiempo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clean and press con mancuernas</td>
+            <td>30s trabajo / 30s descanso</td>
+          </tr>
+          <tr>
+            <td>Remo con mancuerna</td>
+            <td>30s trabajo / 30s descanso</td>
+          </tr>
+          <tr>
+            <td>Thrusters</td>
+            <td>30s trabajo / 30s descanso</td>
+          </tr>
+          <tr>
+            <td>Peso muerto con salto</td>
+            <td>30s trabajo / 30s descanso</td>
+          </tr>
+          <tr>
+            <td>Swing con kettlebell</td>
+            <td>30s trabajo / 30s descanso</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dia-rutina">
+      <h4>Sesión 3 - HIIT Cardio</h4>
+      <p>DIA: Sesión 3</p>
+      <p>Tabata: 20 segundos de trabajo máximo, 10 segundos de descanso. 8 rondas por ejercicio.</p>
+      <table class="tabla-rutinas">
+        <thead>
+          <tr>
+            <th>Ejercicio</th>
+            <th>Tiempo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sprint en el sitio</td>
+            <td>20s trabajo / 10s descanso x8</td>
+          </tr>
+          <tr>
+            <td>Saltos al cajón</td>
+            <td>20s trabajo / 10s descanso x8</td>
+          </tr>
+          <tr>
+            <td>Burpees</td>
+            <td>20s trabajo / 10s descanso x8</td>
+          </tr>
+          <tr>
+            <td>Battle rope</td>
+            <td>20s trabajo / 10s descanso x8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dia-rutina">
+      <h4>Sesión 4 - HIIT de Core</h4>
+      <p>DIA: Sesión 4</p>
+      <p>45 segundos de trabajo, 15 segundos de descanso. 3 rondas.</p>
+      <table class="tabla-rutinas">
+        <thead>
+          <tr>
+            <th>Ejercicio</th>
+            <th>Tiempo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plancha con shoulder taps</td>
+            <td>45s trabajo / 15s descanso</td>
+          </tr>
+          <tr>
+            <td>Russian twists</td>
+            <td>45s trabajo / 15s descanso</td>
+          </tr>
+          <tr>
+            <td>Hollow hold</td>
+            <td>45s trabajo / 15s descanso</td>
+          </tr>
+          <tr>
+            <td>Mountain climbers</td>
+            <td>45s trabajo / 15s descanso</td>
+          </tr>
+          <tr>
+            <td>Dead bug</td>
+            <td>45s trabajo / 15s descanso</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="detalles">
+    <h3>Detalles importantes</h3>
+    <ul>
+      <li><b>Calentamiento:</b> 5-10 minutos de movilidad y cardio ligero antes de comenzar.</li>
+      <li><b>Intensidad:</b> Durante los intervalos de trabajo, el esfuerzo debe ser máximo (85-95% de tu capacidad).</li>
+      <li><b>Progresión:</b> Comienza con intervalos más largos y ve reduciendo el tiempo de descanso conforme mejore tu condición.</li>
+      <li><b>Hidratación:</b> Bebe agua entre series para mantener el rendimiento.</li>
+    </ul>
+  </div>
+
+  <div class="beneficios">
+    <h3>Beneficios</h3>
+    <ul>
+      <li>Mayor quema de calorías y grasa en menos tiempo.</li>
+      <li>Mejora del consumo máximo de oxígeno (VO2 max).</li>
+      <li>Mantenimiento de la masa muscular durante la pérdida de peso.</li>
+      <li>Mejora de la resistencia cardiovascular y anaeróbica.</li>
+      <li>Ahorro de tiempo: sesiones cortas pero efectivas.</li>
+    </ul>
+  </div>
+  </div>
+  <div class="volver-indice">
+    <a href="#indice" class="btn-volver">Volver al índice</a>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+# Framework web principal
+Flask==2.3.3
+
+# Extensión para manejo de base de datos con Flask
+Flask-SQLAlchemy==3.0.5
+SQLAlchemy==1.4.49
+
+# Manejo de sesiones de usuario y autenticación
+Flask-Login==0.6.3
+
+# Formularios y validación de datos
+Flask-WTF==1.2.1
+
+# Motor de base de datos ORM (Object-Relational Mapping)
+SQLAlchemy==1.4.49
+
+# Utilidades web para Flask
+Werkzeug==3.0.1
+
+# Manejo de variables de entorno desde archivo .env
+python-dotenv==1.0.0
+
+# Validación de direcciones de correo electrónico
+email-validator==2.1.0.post1
+
+# Herramienta para manejo de migraciones de base de datos
+Flask-Migrate==4.0.5

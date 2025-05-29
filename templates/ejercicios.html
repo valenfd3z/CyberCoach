@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}CYBER-COACH | Ejercicios{% endblock %}
+
+{% block content %}
+<!-- Contenedor principal con animación fade-in -->
+<div class="contenedor fade-in">
+  <!-- Botón de navegación fija para volver al índice -->
+  <div class="volver-indice">
+    <a href="#indice" class="btn-volver">Volver al índice</a>
+  </div>
+
+  <!-- Sección del índice de ejercicios -->
+  <section class="index-section">
+    <h2 id="indice" class="index-title">Índice de Ejercicios</h2>
+    <!-- Lista de enlaces a los diferentes grupos musculares -->
+    <ul class="index-list">
+      <li><a href="#musculo-pecho">Pecho</a></li>
+      <li><a href="#musculo-espalda">Espalda</a></li>
+      <li><a href="#musculo-hombro">Hombros</a></li>
+      <li><a href="#musculo-piernas">Piernas</a></li>
+      <li><a href="#musculo-biceps">Bíceps</a></li>
+      <li><a href="#musculo-triceps">Tríceps</a></li>
+      <li><a href="#musculo-antebrazo">Antebrazos</a></li>
+      <li><a href="#musculo-core">Core</a></li>
+    </ul>
+  </section>
+
+  <!-- Sección de introducción -->
+  <section class="seccion">
+    <h1 class="seccion-titulo">Biblioteca de Ejercicios</h1>
+    <p class="seccion-contenido">
+      Explora nuestra colección completa de ejercicios organizados por grupos
+      musculares. Cada ejercicio incluye instrucciones detalladas y videos
+      demostrativos para asegurar una técnica correcta.
+    </p>
+  </section>
+
+  <!-- Secciones de ejercicios por grupo muscular -->
+  {% for musculo, ejercicios in ejercicios.items() %}
+  <section class="seccion" id="musculo-{{ musculo|lower|replace(' ', '-')|replace('í', 'i')|replace('á', 'a')|replace('é', 'e')|replace('ó', 'o')|replace('ú', 'u') }}">
+    <h2 class="seccion-titulo">{{ musculo|title }}</h2>
+    <!-- Grid de ejercicios -->
+    <div class="grid grid-3">
+      {% for ejercicio in ejercicios %}
+      <!-- Tarjeta individual de ejercicio -->
+      <div
+        class="tarjeta"
+        id="ejercicio-{{ ejercicio.nombre|lower|replace(' ', '-') }}"
+      >
+        <h3 class="tarjeta-titulo">{{ ejercicio.nombre }}</h3>
+        <!-- Contenedor del video con lazy loading -->
+        {% if ejercicio.video_url %}
+        <div class="video-container">
+          <iframe
+            loading="lazy"
+            src="{{ ejercicio.video_url }}"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="lazy-video"
+          >
+          </iframe>
+        </div>
+        <!-- Placeholder para cuando JavaScript está deshabilitado -->
+        <noscript>
+          <div class="video-placeholder">
+            <p>Cargando video...</p>
+          </div>
+        </noscript>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<!-- Estilos específicos para la página de ejercicios -->
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/ejercicios.css') }}"
+/>
+{% endblock %}
+
+{% block scripts %}
+<!-- Scripts específicos para la página de ejercicios -->
+<script src="{{ url_for('static', filename='js/ejercicios.js') }}"></script>
+<script src="{{ url_for('static', filename='js/lazy-videos.js') }}"></script>
+{% endblock %}

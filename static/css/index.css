@@ -1,0 +1,41 @@
+/* Estilos específicos para la página de inicio */
+.hero-section .seccion-titulo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contacto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.contacto-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-section .seccion-titulo {
+        font-size: 2em;
+    }
+
+    .grid {
+        gap: 15px;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+    }
+}
